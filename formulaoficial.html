@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información de la Fórmula 1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1d1f21;
+            background-image: url('f1_background.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            color: #fff;
+        }
+        .marquesina {
+            background: #ff0000;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .item {
+            background-color: rgba(0, 0, 0, 0.8);
+            margin: 10px;
+            padding: 20px;
+            flex: 1 1 300px;
+            border: 2px solid #ccc;
+            color: #fff;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .gallery img {
+            width: 100px;
+            margin: 5px;
+            opacity: 0.8;
+            transition: opacity 0.5s;
+        }
+        .gallery img:hover {
+            opacity: 1;
+        }
+        .menu {
+            display: none;
+        }
+        .menu-btn {
+            cursor: pointer;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            border: none;
+        }
+        .menu-btn:focus + .menu,
+        .menu-btn:active + .menu {
+            display: block;
+        }
+        .input-form {
+            margin-bottom: 20px;
+        }
+        @keyframes example {
+            0% {background-color: red;}
+            50% {background-color: yellow;}
+            100% {background-color: red;}
+        }
+        .animated-icon {
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            animation: example 2s infinite;
+        }
+
+
+
+
+
+ .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content p {
+            color: #333;
+            padding: 12px 16px;
+            margin: 0;
+            cursor: pointer;
+        }
+
+        .dropdown-content p:hover {
+            background-color: #ddd;
+        }
+
+
+
+
+
+
+        
+    </style>
+</head>
+<body>
+    <div class="marquesina">
+        <marquee>Bienvenido a la página de información sobre la Fórmula 1!</marquee>
+    </div>
+    
+    <div class="container">
+        <div class="item">
+            <h2>Los pilotos que corren en la formula 1 son :</h2>
+            <ol>
+                <li>Max Verstappen</li>
+                <li>Charles Leclerc</li>
+                <li>Lando Norris</li>
+                <li>Carlos Sainz</li>
+                <li>Sergio Perez</li>
+                <li>Oscar Piastri</li>
+                <li>George Russell</li>
+                <li>Lewis Hamilton</li>
+                <li>Fernando Alonso</li>
+                <li>Yuki Tsunoda</li>
+                <li>Lance Stroll</li>
+                <li>Daniel Ricciardo</li>
+                <li>Nico Hülkenberg</li>
+                <li>Pierre Gasly</li>
+                <li>Alexander Albon</li>
+                <li>Esteban Ocon</li>
+                <li>Kevin Magnussen</li>
+                <li>Zhou Guanyu</li>
+                <li>Valtteri Bottas</li>
+                <li>Logan Sargeant</li>
+                <!-- Agrega más pilotos según sea necesario -->
+            </ol>
+        </div>
+        <div class="item">
+            <h2>Escuderías</h2>
+            <ul>
+                <li>Red Bull Racing</li>
+                <li>Mercedes-AMG Petronas</li>
+                <li>Ferrari</li>
+                <li>Mclaren</li>
+                <li>Alpine</li>
+                <li>Hass</li>
+                <li>Aston Martin</li>
+                <li>William</li>
+                <li>RB</li>
+                <li>Kick Sauber</li>
+                <!-- Agrega más escuderías según sea necesario -->
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="item">
+            <h2>Pilotos más Ganadores</h2>
+            <ol>
+                <li>Michael Schumacher - 7 titulos</li>
+                <li>Lewis Hamilton - 7 titulos</li>
+                <li>Juan Manuel Fangio - 5 titulos</li>
+                <li>Sebastian Vettel - 4 titulos</li>
+                <li>Alain Prost - 4 titulos</li>
+                <li>Nelson Piquet - 3 titulos</li>
+                <li>Ayrton Sena - 3 titulos</li>
+                <li>Jack Brabham - 3 titulos</li>
+                <li>Niki Lauda - 3 titulos</li>
+                <li>Max Verstappen - 3 titulos</li>
+
+                <!-- Agrega más información de ganadores según sea necesario -->
+            </ol>
+        </div>
+    </div>
+
+    <div class="container gallery">
+        <img src="https://cdn-7.motorsport.com/images/amp/0a98yMX0/s1000/red-bull-racing-rb20.jpg" alt="Coche de F1 1">
+        <img src="https://e00-marca.uecdn.es/assets/multimedia/imagenes/2024/02/12/17077250080014.jpg" alt="Coche de F1 1">
+        <img src="https://img.asmedia.epimg.net/resizer/v2/B3R62C37ZBHIBNMDAD23AUD5JA.jpeg?auth=1fdf13c6d3459fc822d07421aa9c2514200ed3e0fba65a89fc2638bac3bc8541&width=1472&height=1104&smart=true" alt="Coche de F1 1">
+        <img src="https://hips.hearstapps.com/hmg-prod/images/haas-65cf282b8bca0.jpeg?crop=1.00xw:0.892xh;0,0.0215xh&resize=1200:*" alt="Coche de F1 1">
+        <img src="https://images.daznservices.com/di/library/DAZN_News/ed/8b/stake-f1-team-kick-sauber-f1-2024_1vsy98v8ey9wr1ov8wkmsmzlpb.jpg?t=2059165373" alt="Coche de F1 1">
+        <img src="https://e00-especiales-marca.uecdn.es/motor/images/formula1/seo/seo-especial2024-mclaren.jpg" alt="Coche de F1 1">
+        <img src="https://cdn-5.motorsport.com/images/amp/0qXxdqB6/s1000/mercedes-amg-w15.jpg" alt="Coche de F1 1">
+        <img src="https://titansports.mx/wp-content/uploads/2024/02/Diseno-sin-titulo-35.png" alt="Coche de F1 1">
+        <img src="https://cdn-1.motorsport.com/images/amp/YMdmKeG2/s1000/alpine-a524.jpg" alt="Coche de F1 1">
+        <img src="https://e00-especiales-marca.uecdn.es/motor/images/formula1/seo/seo-especial2024-williams.jpg" alt="Coche de F1 1">
+    </div>
+
+    <div class="container">
+        <div class="item">
+            <h2>¿ Que es la formula 1 ?</h2>
+            <button class="menu-btn"></button>
+            <div class="menu">
+                <ul>
+                    <h2>La Fórmula 1 es la cúspide del automovilismo y la categoría más alta de las carreras de monoplazas. La F1 compite con coches de ruedas abiertas (es decir, fuera del cuerpo principal del vehículo), tanto en circuitos permanentes como en circuitos urbanos. La F1 visita cada temporada lugares tradicionales de competición como el Reino Unido, Mónaco, Italia y Bélgica, y recientemente se ha aventurado en nuevos territorios como Arabia Saudita, Singapur, los Países Bajos y Azerbaiyán, por ejemplo.
+
+                        La F1 tiene una estructura de competición en la que participan 10 equipos, con dos pilotos por equipo. Se trata de un formato de tabla de clasificación, en el que se acumulan puntos a lo largo de la temporada . 
+                        
+                        El campeonato mundial se fundó en 1950 y está regulado por la FIA, que establece las normas y reglamentos. Este deporte es único, ya que los equipos construyen sus propios coches cada año, siguiendo las normas y reglamentos establecidos por la FIA. Con frecuencia crean monoplazas con una gran velocidad en las curvas. Por término medio, los coches de F1 alcanzan una velocidad máxima de más de 320 km/h en las rectas.
+                        
+                        A lo largo de sus 70 años de historia, la Fórmula 1 ha tenido fama de ser un deporte peligroso, en el que los pilotos se juegan la vida en cada carrera. En las últimas décadas, la seguridad ha mejorado drásticamente con modificaciones en los coches -como el halo sobre la cabina- para proteger a los pilotos.</h2>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="item">
+            <h2>Presiona para ocultar la informacion</h2>
+            <div class="animated-icon"></div>
+        </div>
+    </div>
+
+
+
+
+   <div class="container">
+        <div class="item">
+   <div class="dropdown">
+    <span class="dropdown-btn"><br>INFORMACION EXTRA DE CADA PILOTO</span>
+    <div class="dropdown-content">
+<p onclick="mostrarTexto('Nacionalidad:Holandes.......Escuderia:Red Bull Racing.......Numero del piloto:(1)')">Max Verstappen</p>
+<p onclick="mostrarTexto('Nacionalidad:Monegasco.......Escuderia:Ferrari.......Numero del piloto:(16)')">Charles Leclerc</p>
+<p onclick="mostrarTexto('Nacionalidad:Britanico.......Escuderia:Mclaren.......Numero del piloto:(4)')">Lando Norris</p>
+<p onclick="mostrarTexto('Nacionalidad:Español.......Escuderia:Ferrari.......Numero del piloto:(55)')">Carlos Sainz</p>
+<p onclick="mostrarTexto('Nacionalidad:Mexicano.......Escuderia:Red Bull Racing.......Numero del piloto:(11)')">Sergio Perez</p>
+<p onclick="mostrarTexto('Nacionalidad:Australiano.......Escuderia:Mclaren.......Numero del piloto:(81)')">Oscar Piastri</p>
+<p onclick="mostrarTexto('Nacionalidad:Britanico.......Escuderia:Mercedes-AMG Petronas.......Numero del piloto:(63)')">George Russell</p>
+<p onclick="mostrarTexto('Nacionalidad:Britanico.......Escuderia:Mercedes-AMG Petronas.......Numero del piloto:(44)')">Lewis Hamilton</p>
+<p onclick="mostrarTexto('Nacionalidad:Español.......Escuderia:Aston Martin.......Numero del piloto:(14)')">Fernando Alonso</p>
+<p onclick="mostrarTexto('Nacionalidad:Japones.......Escuderia:RB.......Numero del piloto:(22)')">Yuki Tsunoda</p>
+<p onclick="mostrarTexto('Nacionalidad:Canadiense.......Escuderia:Aston Martin.......Numero del piloto:(18)')">Lance Stroll</p>
+<p onclick="mostrarTexto('Nacionalidad:Australiano.......Escuderia:RB.......Numero del piloto:(3)')">Daniel Ricciardo</p>
+<p onclick="mostrarTexto('Nacionalidad:Aleman.......Escuderia:Hass.......Numero del piloto:(27)')">Nico Hülkenberg</p>
+<p onclick="mostrarTexto('Nacionalidad:Frances.......Escuderia:Alpine.......Numero del piloto:(10)')">Pierre Gasly</p>
+<p onclick="mostrarTexto('Nacionalidad:Tailandes.......Escuderia:William.......Numero del piloto:(23)')">Alexander Albon</p>
+<p onclick="mostrarTexto('Nacionalidad:Frances.......Escuderia:Alpine.......Numero del piloto:(31)')">Esteban Ocon</p>
+<p onclick="mostrarTexto('Nacionalidad:Danes.......Escuderia:Hass.......Numero del piloto:(20)')">Kevin Magnussen</p>
+<p onclick="mostrarTexto('Nacionalidad:Chino.......Escuderia:Kick Sauber.......Numero del piloto:(24)')">Zhou Guanyu</p>
+<p onclick="mostrarTexto('Nacionalidad:Finlandes.......Escuderia:Kick Sauber.......Numero del piloto:(77)')">Valtteri Bottas</p>
+<p onclick="mostrarTexto('Nacionalidad:Estadounidense.......Escuderia:William.......Numero del piloto:(2)')">Logan Sargeant</p>
+    </div>
+</div>
+            </div>
+       </div>
+
+<div id="textoMostrado" style="padding: 20px;"></div>
+
+<script>
+    function mostrarTexto(texto) {
+        document.getElementById('textoMostrado').textContent = texto;
+    }
+</script>
+
+<div class="container">
+        <div class="item">
+    <p>Si te apasiona la formula 1 esta imagen te encantara<a href="https://cdn.sanity.io/images/rdxk7lfa/production/365579ef8fdf1a048e0b68912fe7d20f9c35ee56-1200x671.jpg?w=1600&fm=webp&q=70">  Haz clik aqui</a>.</p>
+
+</div>
+    </div>
+    
+
+
+
+
+<script>
+        function mostrarText() {
+            var textoOculto = document.getElementById("texto-oculto");
+            textoOculto.style.display = "block";
+        }
+    </script>
+
+    <div class="container">
+        <div class="item">
+<p>Texto de reflexion sobre la formula 1</p>
+<a href="#" onclick="mostrarText(); return false;">Mostrar texto</a>
+
+<p id="texto-oculto" style="display: none;">La formula 1 no es solo ver 20 carros dando vueltas en la pista una y otra vez,la formula 1 nos genera muchas emociones como por ejemplo alegria cuando le va bien a tu piloto favorito o tristeza cuando no,tambien te puede generar enojo por que le fue bien al piloto que te cae mal,sin duda genera angustia y estres cuando dos pilotos se enfrentas a mas de 300 kilometros por hora y no sabes que pasara,si se chocaran,si el piloto de atras adelantara al de enfrente ,o puede que el piloto de enfrente defienda con todo lo que tiene y no puedan adelantarlo,eso es la formula 1 ,todas las emociones juntas en dos horas viendo a los mejores pilotos del mundo buscndo ser el mejor de los mejores.  </p>
+
+</div>
+        </div>
+
+
+
+<div class="container">
+        <div class="item">
+    <p>Haz clic en el siguiente enlace para ver un GIF:</p>
+<a href="https://media1.tenor.com/m/iMaFWW6jgmIAAAAd/f1-race.gif" target="_blank">Gif de la formula 1</a>
+</div>
+        </div>
+
+
+
+
+    <div class="container">
+        <div class="item">
+            <h2>Para dar por terminada tu visita a este sitio web ingresa tu nombre y correo para saber que eres un fiel admirador de la formula 1 (Al clikear enviar se reseteara la pagina)</h2>
+            <form class="input-form">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre"><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </div>
+
+
+    
+
+
+
+    <div class="container">
+        <div class="item">
+            <h2>Créditos</h2>
+            <p>Este programa fue diseñado por Gonzalez Caldera Jan Paulo</p>
+            <p>Última Actualización:14 de Junio 2024</p>
+        </div>
+    </div>
+</body>
+</html>
